@@ -1,0 +1,242 @@
+  .cerrar {
+  font-size: 104px;
+  opacity: 0;
+  top: 60px;
+  right: 50px;
+}
+
+.mostrar {
+  font-size: 104px;
+  opacity: 1;
+  top: 50px;
+  right: 50px;
+}
+
+.mostrar .navbar-toggler-icon {
+  width: 0.7em;
+}
+
+.navbar {
+  position: fixed;
+  width: 101%;
+  left: 0;
+  box-shadow: grey 10px 2px 8px;
+  z-index: 108;
+}
+
+.navbar-brand img ::ng-deep {
+  top: 5px !important;
+  opacity: 1 !important;
+  height: 50px;
+}
+
+#navbarSupportedContent {
+  margin-left: 122px !important;
+}
+
+.nav-link {
+  text-align: center !important;
+  font: bold 20px;
+  letter-spacing: 0px !important;
+  color: #007aff !important;
+  opacity: 1;
+  font-weight: 200;
+  font-size: 18px;
+  font-family: arial;
+}
+
+.btn-contactanos {
+  right: 0;
+  position: fixed;
+  margin-right: 80px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  text-align: center;
+  font: normal normal bold 12px/20px Montserrat;
+  letter-spacing: 0px;
+  background: #44d62c 0% 0% no-repeat padding-box;
+  border-color: #44d62c;
+  border-radius: 16px;
+  opacity: 1;
+  width: 150px;
+  height: 32px;
+  margin-left: 32px;
+}
+
+.navbar-brand {
+  margin-left: 130px;
+  margin-top: 5px;
+}
+
+#navbarSupportedContent a {
+  margin-left: 31px !important;
+}
+
+a.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0%;
+  background: blue;
+  height: 4px;
+  top: 7px;
+  position: relative;
+  float: left;
+}
+
+.nav-link:hover::after {
+  animation: animacion 0.2s linear forwards;
+}
+
+@keyframes animacion {
+  0% {
+    width: 0;
+    left: 50%;
+  }
+  70% {
+    width: 50%;
+    left: calc(50% - (25%));
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .invalid-feedback {
+    font-size: 15px;
+  }
+
+  body {
+    width: fit-content !important;
+  }
+
+  .navbar-brand ::ng-deep {
+    margin-left: 0px;
+    padding: 20px !important;
+    z-index: 108;
+  }
+
+  .nav-link {
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+
+    font: normal normal bold 50px Montserrat !important;
+  }
+
+  .navbar ul {
+    line-height: 30;
+    align-items: center;
+  }
+
+  .navbar ul:first-child {
+    margin-top: 400px;
+  }
+
+  .navbar ul:last-child {
+    margin-bottom: 700px;
+  }
+
+  .navbar a {
+    padding-bottom: 100px;
+  }
+
+  #navbarSupportedContent {
+    margin-left: 0 !important;
+    z-index: 2;
+    left: 0;
+    height: fit-content !important;
+    width: -webkit-fill-available !important;
+    position: fixed;
+    top: 0;
+    background-color: #f8f9fa !important;
+  }
+
+  .navbar .btn-contactanos {
+    padding: 10px;
+    margin-bottom: 100px;
+    border-radius: 70px;
+    position: relative;
+    margin: 0;
+    width: 128px;
+    height: 40px !important;
+    font-size: 15px;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar-toggler {
+    padding-right: 20px;
+    font-size: 50px;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    margin-right: 30px;
+    z-index: 10;
+  }
+
+  .collapsing {
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .mostrar {
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    font-size: 20px;
+    top: 40px;
+  }
+  .navbar-toggler[aria-expanded="true"] .cerrar {
+    transition: all 0.5s ease-in;
+    opacity: 1;
+    font-size: 20px;
+    top: 40px;
+  }
+  .navbar-toggler[aria-expanded="false"] .cerrar {
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    font-size: 20px;
+    top: 40px;
+  }
+  .navbar-toggler[aria-expanded="false"] .mostrar {
+    transition: all 0.5s ease-in;
+    opacity: 1;
+    font-size: 20px;
+    top: 40px;
+  }
+
+  #navbarSupportedContent:not(.show) ul {
+    opacity: 0.1;
+  }
+  #navbarSupportedContent:not(.show) {
+    transform: scaleY(0);
+    transition: transform 0.2s ease-out;
+    transform-origin: top;
+    margin-top: 200px;
+  }
+
+  #navbarSupportedContent.show {
+    opacity: 1;
+    position: absolute !important;
+    transform: scaleY(1);
+    transition: transform 0.4s ease-in;
+    transform-origin: top;
+    top: 0;
+  }
+}
+
+/* #navbarSupportedContent{
+    padding-left: 45% !important;
+}
+   */

@@ -1,0 +1,14 @@
+<h1>asdasd{{prueba}}</h1>
+<div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)"
+	(scroll)="onScroll($event)">
+	
+	<div id="about">
+		<app-about></app-about>
+	</div>
+	<div id="experiencia">
+		<app-experiencia></app-experiencia>
+	</div>
+	<div id="contacto">
+		<app-contacto></app-contacto>
+	</div>
+</div>
