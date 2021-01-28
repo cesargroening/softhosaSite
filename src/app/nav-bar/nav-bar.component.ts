@@ -7,7 +7,14 @@ declare let $: any;
   styleUrls: ["./nav-bar.component.css"]
 })
 export class NavBarComponent implements OnInit {
-  constructor() {}
+  contenedor = {
+    scrollTop: 0
+  };
+  constructor() {
+    
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.contenedor = $('body');
+  }
 }

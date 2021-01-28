@@ -1,4 +1,53 @@
-  .cerrar {
+
+.shrink-navbar a{
+  animation-name: texto-animacion;
+  animation-duration: 0.2s;
+  font-size: 14px;
+  
+}
+
+.shrink-navbar{
+  opacity: 0.8 !important;
+  background-color: white;
+  background: white;
+  opacity: 0.6 !important;
+  box-shadow: black 1px 2px 7px;
+  height: 50px !important;
+  font-size: 10px !important; 
+  position: fixed;
+  width: 101%;
+  left: 0;
+  z-index: 108;
+  height: 50px;
+  animation: navbar-animacion;
+  animation-duration: 0.2s;
+  
+
+}
+
+
+
+@keyframes  navbar-animacion {
+  from{
+  }
+  to{
+    height: 50px;
+  }
+ }
+ 
+@keyframes  texto-animacion {
+ from{
+   font-size: 24px;
+ }
+ to{
+   font-size: 14px;
+ }
+}
+
+
+
+
+.cerrar {
   font-size: 104px;
   opacity: 0;
   top: 60px;
@@ -20,8 +69,9 @@
   position: fixed;
   width: 101%;
   left: 0;
-  box-shadow: grey 10px 2px 8px;
+  transition: font-size 10s !important;
   z-index: 108;
+  
 }
 
 .navbar-brand img ::ng-deep {
@@ -38,11 +88,12 @@
   text-align: center !important;
   font: bold 20px;
   letter-spacing: 0px !important;
-  color: #007aff !important;
+  color: #ff0000 !important;
   opacity: 1;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 24px;
   font-family: arial;
+  
 }
 
 .btn-contactanos {
@@ -81,11 +132,12 @@ a.nav-link.active::after {
 .nav-link::after {
   content: "";
   width: 0%;
-  background: blue;
+  background: #ff0000 !important;
   height: 4px;
   top: 7px;
   position: relative;
   float: left;
+  
 }
 
 .nav-link:hover::after {

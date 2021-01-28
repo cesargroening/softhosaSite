@@ -1,4 +1,5 @@
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+
+<nav id="navbar" class="navbar navbar-expand" [ngClass]="{'shrink-navbar': contenedor.scrollTop() > 300 || contenedor.scrollTop() > 300}">
 	<a class="navbar-brand" href="#">
 		<img class="logo"  src='/assets/Logo.svg'>
     </a>
