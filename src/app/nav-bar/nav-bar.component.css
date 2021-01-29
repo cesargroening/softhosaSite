@@ -7,10 +7,9 @@
 }
 
 .shrink-navbar{
-  opacity: 0.8 !important;
+  opacity: 1 !important;
   background-color: white;
   background: white;
-  opacity: 0.6 !important;
   box-shadow: black 1px 2px 7px;
   height: 50px !important;
   font-size: 10px !important; 
@@ -96,25 +95,7 @@
   
 }
 
-.btn-contactanos {
-  right: 0;
-  position: fixed;
-  margin-right: 80px;
 
-  padding-left: 40px;
-  padding-right: 40px;
-
-  text-align: center;
-  font: normal normal bold 12px/20px Montserrat;
-  letter-spacing: 0px;
-  background: #44d62c 0% 0% no-repeat padding-box;
-  border-color: #44d62c;
-  border-radius: 16px;
-  opacity: 1;
-  width: 150px;
-  height: 32px;
-  margin-left: 32px;
-}
 
 .navbar-brand {
   margin-left: 130px;
@@ -170,7 +151,7 @@ a.nav-link.active::after {
 
   .navbar-brand ::ng-deep {
     margin-left: 0px;
-    padding: 20px !important;
+    
     z-index: 108;
   }
 
@@ -209,7 +190,7 @@ a.nav-link.active::after {
   }
 
   .navbar .btn-contactanos {
-    padding: 10px;
+    
     margin-bottom: 100px;
     border-radius: 70px;
     position: relative;

@@ -13,6 +13,7 @@ import { ContactoComponent } from "./contacto/contacto.component";
 import { ScrollSpyDirective } from "./scroll-spy.directive";
 import { ParticleComponent } from './particle/particle.component';
 import { CarouselComponent } from './experiencia/carousel/carousel.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -26,7 +27,8 @@ import { CarouselComponent } from './experiencia/carousel/carousel.component';
     ContactoComponent,
     ScrollSpyDirective,
     ParticleComponent,
-    CarouselComponent
+    CarouselComponent,
+    FooterComponent
   ],
   bootstrap: [AppComponent]
 })

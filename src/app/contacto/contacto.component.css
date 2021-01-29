@@ -1,6 +1,36 @@
 .principal {
   padding-top: -80px;
   margin-top: -80px;
-  background-image: linear-gradient(yellow, red);
+  background-image: transparent;
   width: 100%;
+}
+
+
+.principal {
+  height: 1200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/fondo-secundario.jpg");
+}
+
+.principal::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #1a1444;
+  opacity: 0.6;
+  z-index: 1;
+} 
+
+.etiqueta{
+  z-index: 2;
+  position: absolute;
+  font-size: 4em;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 4px 5px 3px #0a0056;
+  margin: 200px;
 }
