@@ -30,7 +30,7 @@ export class ParticleComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.width = window.innerWidth;
     this.particalCanvas.nativeElement.width = this.width;
-    this.particalCanvas.nativeElement.height = 500;
+    this.particalCanvas.nativeElement.height = 700;
 
     this.canvasWidth = this.particalCanvas.nativeElement.width;
     this.canvasHeight = this.particalCanvas.nativeElement.height

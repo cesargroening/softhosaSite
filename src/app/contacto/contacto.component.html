@@ -1,7 +1,13 @@
-<div class="principal row">
+<h1>{{this.contenedor.scrollTop()}}</h1>
+<div 
+	#fondo 
+	class="principal row" [ngStyle]="{'background-position': ''+
+		((this.contenedor.scrollTop()-1900)/10)+'px 300px'}">
+	<div class="col-12 col-sm-6">
+	</div>
 	<div class="col-12 col-sm-6">
 		<h1 class="etiqueta">Texto mamador</h1>
 	</div>
-		<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xs-6 derecho">
-		</div>
+	<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xs-6 derecho">
 	</div>
+</div>

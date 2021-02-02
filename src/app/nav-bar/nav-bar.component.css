@@ -2,22 +2,22 @@
 .shrink-navbar a{
   animation-name: texto-animacion;
   animation-duration: 0.2s;
-  font-size: 14px;
+  font-size: 20px;
+  color: #ff0000 !important;
+  font-weight: bolder;
   
 }
 
 .shrink-navbar{
   opacity: 1 !important;
-  background-color: white;
-  background: white;
+  background: #181242e7;
   box-shadow: black 1px 2px 7px;
-  height: 50px !important;
   font-size: 10px !important; 
   position: fixed;
   width: 101%;
   left: 0;
   z-index: 108;
-  height: 50px;
+  height: 80px;
   animation: navbar-animacion;
   animation-duration: 0.2s;
   
@@ -30,7 +30,7 @@
   from{
   }
   to{
-    height: 50px;
+    height: 80px;
   }
  }
  
@@ -39,7 +39,7 @@
    font-size: 24px;
  }
  to{
-   font-size: 14px;
+   font-size: 20px;
  }
 }
 

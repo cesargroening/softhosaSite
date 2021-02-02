@@ -6,7 +6,7 @@
 .principal {
   padding-top: 80px;
   background: transparent;
-
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -23,3 +23,19 @@
 }
 
 
+.contenedor-texto{
+  animation: aparecer;
+  animation-duration: 2s;
+}
+
+@keyframes aparecer {
+  from{
+    opacity: 0;
+    left: -100px
+  }
+  to{
+    opacity: 1;
+    left: 0px;
+  }
+ }
+ 

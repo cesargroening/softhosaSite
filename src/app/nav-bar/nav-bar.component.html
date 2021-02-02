@@ -2,27 +2,27 @@
 <nav id="navbar" class="navbar navbar-expand" [ngClass]="{'shrink-navbar': contenedor.scrollTop() > 300 || contenedor.scrollTop() > 300}">
 	<a class="navbar-brand" href="#">
 		<img class="logo"  src='/assets/Logo.svg'>
-    </a>
+	</a>
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-      <button type="button" style="position: absolute;" class="cerrar close" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-
-		<button type="button" style="position: absolute;" class="mostrar close" aria-label="Close">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+		<button type="button" style="position: absolute;" class="cerrar close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
 		</button>
-
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-
-				<li class="nav-item">
-					<a class="nav-link" routerLinkActive="active" routerLink="/about">Sobre
-						Nosotros<span class="sr-only"></span></a>
+		
+		<button type="button" style="position: absolute;" class="mostrar close" aria-label="Close">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+	</button>
+	
+	
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			
+			<li class="nav-item">
+				<a class="nav-link" routerLinkActive="active" routerLink="/about">Sobre
+					Nosotros<span class="sr-only"></span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" routerLinkActive="active" routerLink="/experiencia">Nuestra Experiencia</a>
@@ -30,8 +30,8 @@
 				<li class="nav-item">
 					<a class="nav-link" routerLinkActive="active" routerLink="/contacto">Cotactanos!</a>
 				</li>
-
-
+				
+				
 			</ul>
 		</div>
-</nav>
+	</nav>
